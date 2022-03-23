@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.invisible {
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+.visible{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.sidebar {
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #283593;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 30px;*/
+    white-space: nowrap;
+}
+
+.blockyn {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.s;
+}
+
+   .blocky {
+    padding: 0px 8px 8px 27px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.s;
+}
+
+.sidebar a:hover .visible{   /*color hover*/
+    color: #8a8ada; 
+    font-size: 27px;
+    transition: 0.5s;
+}
+
+ .sidebar a:active{
+    color: black !important;
+}
+
+
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.material-icons,
+.icon-text {
+    vertical-align: auto;
+}
+
+.material-icons, .ico{
+    padding-bottom: px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 100px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
